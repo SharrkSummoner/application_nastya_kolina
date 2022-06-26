@@ -14,15 +14,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Product_list"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         tools:targetApi="31">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".list"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".LaunchScreen"
             android:exported="true"
-            android:label="Ресторан Анастасии Колиной"
+            android:label="Меню ресторана"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
